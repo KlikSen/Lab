@@ -30,6 +30,8 @@ int main()
 			else
 				y = x - 6;
 
+	cout << "y = " << y << endl;
+
 	cin.get();
 	return 0;
 }

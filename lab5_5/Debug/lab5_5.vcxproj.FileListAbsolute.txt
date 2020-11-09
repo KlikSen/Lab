@@ -1,2 +1,4 @@
 C:\Users\KlikSen\source\repos\lab5_5\Debug\lab5_5.exe
 C:\Users\KlikSen\source\repos\lab5_5\Debug\lab5_5.pdb
+C:\Users\KlikSen\Documents\GitHub\Lab\lab5_5\Debug\lab5_5.exe
+C:\Users\KlikSen\Documents\GitHub\Lab\lab5_5\Debug\lab5_5.pdb

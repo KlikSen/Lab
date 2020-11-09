@@ -17,12 +17,10 @@ int f(int n)
 	else
 		if (n == 2)
 		{
-			srand((unsigned)time(NULL));
 			return rand() % 100;
 		}
 		else
 		{
-			srand((unsigned)time(NULL));
 		    return rand() % 25;
 	}
 }
@@ -30,6 +28,8 @@ int f(int n)
 int main()
 {
 	int g;
+
+	srand((unsigned)time(NULL));
 
 	cout << "g = "; cin >> g;
 

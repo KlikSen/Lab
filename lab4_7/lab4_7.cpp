@@ -26,7 +26,7 @@ int main()
 		S = a;
 		do {
 			n++;
-			R = pow(-1, n) * pow(x, 2) / (n * pow(-1, n - 1));
+			R = -1. * pow(x, 2) / n;
 			a *= R;
 			S += a;
 		} while (abs(a) >= eps);

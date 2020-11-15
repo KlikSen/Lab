@@ -49,7 +49,7 @@ double S(const double x, const double eps, int& n, double s)
 }
 double A(const double x, const int n, double a)
 {
-	double R = pow(-1, n) * pow(x, 2) / (n * pow(-1, n - 1));
+	double R = -1. * pow(x, 2) / n;
 
 	a *= R;
 	return a;

@@ -43,10 +43,16 @@ int main()
 {
 	int N;
 	cout << "N = "; cin >> N;
-	cout << "(iter) P0 = " << P0(N) << endl;
-	cout << "(rec up ++) P1 = " << P1(N, N) << endl;
-	cout << "(rec up --) P2 = " << P2(N, 25) << endl;
-	cout << "(rec down ++) P3 = " << P3(N, N, 1) << endl;
-	cout << "(rec down --) P4 = " << P4(N, 25, 1) << endl;
+	double p0, p1, p2, p3, p4;
+	p0 = P0(N);
+	p1 = P1(N, N);
+	p2 = P2(N, 25);
+	p3 = P3(N, N, 1);
+	p4 = P4(N, 25, 1);
+	cout << "(iter) P0 = " << p0 << endl;
+	cout << "(rec up ++) P1 = " << p1 << endl;
+	cout << "(rec up --) P2 = " << p2 << endl;
+	cout << "(rec down ++) P3 = " << p3 << endl;
+	cout << "(rec down --) P4 = " << p4 << endl;
 	return 0;
 }

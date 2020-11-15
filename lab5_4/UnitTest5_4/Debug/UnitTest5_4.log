@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  UnitTest5_4.cpp
+C:\Users\KlikSen\source\repos\lab5_4\UnitTest5_4\UnitTest5_4.cpp(16,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     Создается библиотека C:\Users\KlikSen\source\repos\lab5_4\Debug\UnitTest5_4.lib и объект C:\Users\KlikSen\source\repos\lab5_4\Debug\UnitTest5_4.exp
+  UnitTest5_4.vcxproj -> C:\Users\KlikSen\source\repos\lab5_4\Debug\UnitTest5_4.dll

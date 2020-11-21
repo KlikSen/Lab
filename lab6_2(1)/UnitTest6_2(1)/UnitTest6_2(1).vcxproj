@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{281D8AC4-C3AB-4FA6-9AFE-14020668DBD9}</ProjectGuid>
+    <ProjectGuid>{3874AB8C-7B17-4364-A9D8-9DF1C877D7A6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>UnitTest621</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -168,7 +168,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\lab6_2(1)\lab6_2(1).vcxproj">
+    <ProjectReference Include="..\lab6_2(1).vcxproj">
       <Project>{547b5677-0d08-4b30-8099-c7c6e1dc888c}</Project>
     </ProjectReference>
   </ItemGroup>

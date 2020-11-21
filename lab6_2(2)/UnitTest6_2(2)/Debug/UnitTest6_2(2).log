@@ -1,4 +1,5 @@
 ﻿  pch.cpp
   UnitTest6_2(2).cpp
-     Создается библиотека C:\Users\KlikSen\source\repos\lab6_2(2)\Debug\UnitTest6_2(2).lib и объект C:\Users\KlikSen\source\repos\lab6_2(2)\Debug\UnitTest6_2(2).exp
-  UnitTest6_2(2).vcxproj -> C:\Users\KlikSen\source\repos\lab6_2(2)\Debug\UnitTest6_2(2).dll
+  LINK : не найден или не выполнена сборка C:\Users\KlikSen\Documents\GitHub\Lab\lab6_2(2)\Debug\UnitTest6_2(2).dll при последней инкрементной компоновке; выполняется полная компоновка
+     Создается библиотека C:\Users\KlikSen\Documents\GitHub\Lab\lab6_2(2)\Debug\UnitTest6_2(2).lib и объект C:\Users\KlikSen\Documents\GitHub\Lab\lab6_2(2)\Debug\UnitTest6_2(2).exp
+  UnitTest6_2(2).vcxproj -> C:\Users\KlikSen\Documents\GitHub\Lab\lab6_2(2)\Debug\UnitTest6_2(2).dll

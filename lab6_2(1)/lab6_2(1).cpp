@@ -23,6 +23,17 @@ int Kilk(int mas[], const int n)
             k++;
     return k;
 }
+void Create(int* mas, const int n, const int Low, const int High)
+{
+    for (int i = 0; i < n; i++)
+        mas[i] = (Low + rand() % (High - Low + 1));
+}
+void Print(int* mas, const int n)
+{
+    for (int i = 0; i < n; i++)
+        cout << setw(4) << mas[i];
+    cout << endl;
+}
 
 int main()
 {
@@ -36,11 +47,8 @@ int main()
 
     int a[N];
 
-    for (int i = 0; i < N; i++)
-        a[i] = (c + rand() % (b - c + 1));
-
-    for (int i = 0; i < N; i++)
-        cout << a[i] << " ";
+    Create(a, N, c, b);
+    Print(a, N);
 
     ser = Sum(a, N) / Kilk(a, N);
 

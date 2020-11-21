@@ -27,8 +27,20 @@ int Kilk(int mas[], const int n)
         else
             return Kilk(mas, n - 1);
 }
-
-
+void Create(int* mas, const int n, const int Low, const int High, int i)
+{
+    mas[i] = Low + rand() % (High - Low + 1);
+    if (i < n - 1)
+        Create(mas, n, Low, High, i + 1);
+}
+void Print(int* mas, const int n, int i)
+{
+    cout << setw(4) << mas[i];
+    if (i < n - 1)
+        Print(mas, n, i + 1);
+    else
+        cout << endl;
+}
 int main()
 {
     SetConsoleOutputCP(1251);
@@ -41,11 +53,8 @@ int main()
 
     int a[N];
 
-    for (int i = 0; i < N; i++)
-        a[i] = (c + rand() % (b - c + 1));
-
-    for (int i = 0; i < N; i++)
-        cout << a[i] << " ";
+    Create(a, N, c, b, 0);
+    Print(a, N, 0);
 
     ser = Sum(a, N) / Kilk(a, N);
 

@@ -4,7 +4,7 @@
 #include <math.h>
 
 using namespace std;
-int Sum(int mas[], const int n)
+int Sum(int *mas, const int n)
 {
     if (n < 0)
         return 0;
@@ -14,7 +14,7 @@ int Sum(int mas[], const int n)
         else
             return Sum(mas, n - 1);
 }
-int Kilk(int mas[], const int n)
+int Kilk(int *mas, const int n)
 {
     if (n < 0)
         return 0;
@@ -24,12 +24,26 @@ int Kilk(int mas[], const int n)
         else
             return Kilk(mas, n - 1);
 }
-int Zamina(int mas[], const int n)
+void Zamina(int *mas, const int n, int i)
 {
-    if ((mas[n] > 0) && ((mas[n] % 2) == 0))
-        return Zamina(mas, n - 1);
-    else 
-        return 0;
+        if ((mas[i] > 0) && ((mas[i] % 2) == 0))
+            mas[i] = 0;
+        if (i < n - 1)
+            Zamina(mas, n, i +1);
+}
+void Create(int* mas, const int n, const int Low, const int High, int i)
+{
+    mas[i] = Low + rand() % (High - Low + 1);
+    if (i < n - 1)
+        Create(mas, n, Low, High, i + 1);
+}
+void Print(int* mas, const int n, int i)
+{
+    cout << setw(4) << mas[i];
+    if (i < n - 1)
+        Print(mas, n, i + 1);
+    else
+        cout << endl;
 }
 int main()
 {
@@ -39,25 +53,14 @@ int main()
     const int N = 25;
     int a[N];
 
-    for (int i = 0; i < 25; i++)
-        a[i] = (c + rand() % (b - c + 1));
- 
-    for (int i = 0; i < 25; i++)
-        cout << a[i] << " ";
+    Create(a, N, c, b, 0);
+    Print(a, N, 0);
     
     cout << endl;
   
     cout << "Amount of numbers = " << Kilk(a, N) << "   " << "Sum of numbers = " << Sum(a, N) << endl;
 
-    for (int i = 0; i < 25; i++)
-    {
-        if ((a[i] > 0) && ((a[i] % 2) == 0))
-        a[i] = Zamina(a, i);
-    }
-
-    for (int i = 0; i < 25; i++)
-    {
-        cout << a[i] << " ";
-    }
+    Zamina(a, N, 0);
+    Print(a, N, 0);
     return 0;
 }

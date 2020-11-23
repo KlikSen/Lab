@@ -34,14 +34,14 @@ void Create(int* mas, const int size, const int Low, const int High)
         mas[i] = Low + rand() % (High - Low + 1);
 }
 
-template <typename T0>
-void Sort2(T0* mas, const T0 size)
+template <typename T>
+void Sort2(T* mas, const int size)
 {
-    for (T0 i = 0; i < size - 1; i++)
+    for (T i = 0; i < size - 1; i++)
     {
-        T0 max = mas[i];
-        T0 imax = i;
-        for (T0 j = i + 1; j < size; j++)
+        T max = mas[i];
+        int imax = i;
+        for (T j = i + 1; j < size; j++)
             if (max < mas[j])
             {
                 max = mas[j];
@@ -51,17 +51,17 @@ void Sort2(T0* mas, const T0 size)
         mas[i] = max;
     }
 }
-template <typename T1>
-void Print2(T1* mas, const T1 n)
+template <typename T>
+void Print2(T* mas, const int size)
 {
-    for (T1 i = 0; i < n; i++)
+    for (T i = 0; i < size; i++)
         cout << setw(4) << mas[i];
     cout << endl;
 }
-template <typename T2>
-void Create2(T2* mas, const T2 size, const T2 Low, const T2 High)
+template <typename T>
+void Create2(T* mas, const int size, const T Low, const T High)
 {
-    for (T2 i = 0; i < size; i++)
+    for (T i = 0; i < size; i++)
         mas[i] = Low + rand() % (High - Low + 1);
 }
 

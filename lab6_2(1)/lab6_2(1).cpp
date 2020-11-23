@@ -9,7 +9,7 @@ int Sum(int mas[], const int n)
 {
     int sa = 0;
     for (int i = 0; i < n; i++)
-        if (abs(mas[i]) % 2 == 1)
+        if (mas[i] % 2 != 0)
             sa += mas[i];
 
     return sa;
@@ -19,7 +19,7 @@ int Kilk(int mas[], const int n)
 {
     int k = 0;
     for (int i = 0; i < n; i++)
-        if (abs(mas[i])%2==1)
+        if (mas[i]%2!=0)
             k++;
     return k;
 }
@@ -49,8 +49,12 @@ int main()
 
     Create(a, N, c, b);
     Print(a, N);
-
-    ser = Sum(a, N) / Kilk(a, N);
+    int K = Kilk(a, N);
+    int S = Sum(a, N);
+    if (K == 0)
+        ser = 0;
+    else
+        ser = S * 1. / K;
 
     cout << endl;
 

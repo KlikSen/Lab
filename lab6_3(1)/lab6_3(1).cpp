@@ -10,16 +10,16 @@ void Sort(int *mas, const int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
-        int min = mas[i];
-        int imin = i;
+        int max = mas[i];
+        int imax = i;
         for (int j = i + 1; j < size; j++)
-            if (min > mas[j])
+            if (max < mas[j])
             {
-                min = mas[j];
-                imin = j;
+                max = mas[j];
+                imax = j;
             }
-        mas[imin] = mas[i];
-        mas[i] = min;
+        mas[imax] = mas[i];
+        mas[i] = max;
     }
 }
 void Print(int* mas, const int n)
@@ -39,16 +39,16 @@ void Sort2(T0* mas, const T0 size)
 {
     for (T0 i = 0; i < size - 1; i++)
     {
-        T0 min = mas[i];
-        T0 imin = i;
+        T0 max = mas[i];
+        T0 imax = i;
         for (T0 j = i + 1; j < size; j++)
-            if (min > mas[j])
+            if (max < mas[j])
             {
-                min = mas[j];
-                imin = j;
+                max = mas[j];
+                imax = j;
             }
-        mas[imin] = mas[i];
-        mas[i] = min;
+        mas[imax] = mas[i];
+        mas[i] = max;
     }
 }
 template <typename T1>

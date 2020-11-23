@@ -8,16 +8,16 @@ using namespace std;
 
 void Sort(int* mas, const int size, int i)
 {
-    int min = mas[i];
-    int imin = i;
+    int max = mas[i];
+    int imax = i;
     for (int j = i + 1; j < size; j++)
-        if (min > mas[j])
+        if (max < mas[j])
         {
-            min = mas[j];
-            imin = j;
+            max = mas[j];
+            imax = j;
         }
-        mas[imin] = mas[i];
-    mas[i] = min;
+        mas[imax] = mas[i];
+    mas[i] = max;
 
     if (i < size - 2)
         Sort(mas, size, i + 1);
@@ -41,16 +41,16 @@ void Print(int* mas, const int n, int i)
 template <typename T0>
 void Sort2(T0* mas, const T0 size, T0 i)
 {
-    T0 min = mas[i];
-    T0 imin = i;
+    T0 max = mas[i];
+    T0 imax = i;
     for (T0 j = i + 1; j < size; j++)
-        if (min > mas[j])
+        if (max < mas[j])
         {
-            min = mas[j];
-            imin = j;
+            max = mas[j];
+            imax = j;
         }
-    mas[imin] = mas[i];
-    mas[i] = min;
+    mas[imax] = mas[i];
+    mas[i] = max;
 
     if (i < size - 2)
         Sort(mas, size, i + 1);

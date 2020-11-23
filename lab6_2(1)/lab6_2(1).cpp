@@ -41,7 +41,7 @@ int main()
     srand((unsigned)time(NULL));
     int c = -50;
     int b = 50;
-    int ser = 0;
+    double ser;
     
     const int N = 30;
 

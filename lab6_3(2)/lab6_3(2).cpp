@@ -23,27 +23,27 @@ void Sort(int* mas, const int size, int i)
         Sort(mas, size, i + 1);
 }
 
-void Create(int* mas, const int n, const int Low, const int High, int i)
+void Create(int* mas, const int size, const int Low, const int High, int i)
 {
     mas[i] = Low + rand() % (High - Low + 1);
-    if (i < n - 1)
-        Create(mas, n, Low, High, i + 1);
+    if (i < size - 1)
+        Create(mas, size, Low, High, i + 1);
 }
-void Print(int* mas, const int n, int i)
+void Print(int* mas, const int size, int i)
 {
     cout << setw(4) << mas[i];
-    if (i < n - 1)
-        Print(mas, n, i + 1);
+    if (i < size - 1)
+        Print(mas, size, i + 1);
     else
         cout << endl;
 }
 
 template <typename T>
-void Sort2(T* mas, const int size, T i)
+void Sort2(T* mas, const int size, int i)
 {
     T max = mas[i];
     int imax = i;
-    for (T j = i + 1; j < size; j++)
+    for (int j = i + 1; j < size; j++)
         if (max < mas[j])
         {
             max = mas[j];
@@ -56,20 +56,20 @@ void Sort2(T* mas, const int size, T i)
         Sort(mas, size, i + 1);
 }
 template <typename T>
-void Print2(T* mas, const int size, T i)
+void Print2(T* mas, const int size, int i)
 {
     cout << setw(4) << mas[i];
-    if (i < n - 1)
-        Print(mas, n, i + 1);
+    if (i < size - 1)
+        Print(mas, size, i + 1);
     else
         cout << endl;
 }
 template <typename T>
-void Create2(T* mas, const int size, const T Low, const T High, T i)
+void Create2(T* mas, const int size, const T Low, const T High, int i)
 {
     mas[i] = Low + rand() % (High - Low + 1);
-    if (i < n - 1)
-        Create(mas, n, Low, High, i + 1);
+    if (i < size - 1)
+        Create(mas, size, Low, High, i + 1);
 }
 
 int main()

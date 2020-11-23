@@ -37,11 +37,11 @@ void Create(int* mas, const int size, const int Low, const int High)
 template <typename T>
 void Sort2(T* mas, const int size)
 {
-    for (T i = 0; i < size - 1; i++)
+    for (int i = 0; i < size - 1; i++)
     {
-        T max = mas[i];
+        int max = mas[i];
         int imax = i;
-        for (T j = i + 1; j < size; j++)
+        for (int j = i + 1; j < size; j++)
             if (max < mas[j])
             {
                 max = mas[j];
@@ -54,14 +54,14 @@ void Sort2(T* mas, const int size)
 template <typename T>
 void Print2(T* mas, const int size)
 {
-    for (T i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
         cout << setw(4) << mas[i];
     cout << endl;
 }
 template <typename T>
 void Create2(T* mas, const int size, const T Low, const T High)
 {
-    for (T i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
         mas[i] = Low + rand() % (High - Low + 1);
 }
 

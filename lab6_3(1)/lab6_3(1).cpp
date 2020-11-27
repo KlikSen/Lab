@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Sort(int *mas, const int size)
+void Sort(int* mas, const int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
@@ -39,7 +39,7 @@ void Sort2(T* mas, const int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
-        int max = mas[i];
+        T max = mas[i];
         int imax = i;
         for (int j = i + 1; j < size; j++)
             if (max < mas[j])
@@ -73,7 +73,7 @@ int main()
     int b = 50;
 
     const int N = 30;
-    int *a = new int[N];
+    int* a = new int[N];
     int* t = new int[N];
 
     Create(a, N, c, b);

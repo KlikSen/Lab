@@ -1,0 +1,2 @@
+C:\Users\KlikSen\source\repos\lab8_1(string)\Debug\lab8_1(string).exe
+C:\Users\KlikSen\source\repos\lab8_1(string)\Debug\lab8_1(string).pdb

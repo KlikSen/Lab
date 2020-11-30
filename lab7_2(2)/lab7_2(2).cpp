@@ -25,12 +25,12 @@ void Print(int** mas, const int size, int i, int j)
         else
             cout << endl << endl;
 }
-void Min(int** mas, const int size, const int NumofRow,int j, int& min)
+int Min(int** mas, const int size, const int NumofRow,int j, int min)
 {
     if (mas[NumofRow][j] < min)
     min = mas[NumofRow][j];
     if (j < size - 1)
-        Min(mas, size, NumofRow, j + 1, min);
+        return Min(mas, size, NumofRow, j + 1, min);
     
 }
 void Sum(int** mas, const int size, int& min, int i, int& sum)
@@ -38,8 +38,7 @@ void Sum(int** mas, const int size, int& min, int i, int& sum)
     if (i % 2 != 0)
     {
         min = mas[i][0];
-        Min(mas, size, i, 0, min);
-        sum += min;
+        sum += Min(mas, size, i, 0, min);
     }
     if (i < size - 1)
         Sum(mas, size, min, i + 1, sum);

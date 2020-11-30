@@ -19,24 +19,20 @@ void Print(int** mas, const int size)
     }
     cout << endl;
 }
-void Min(int **mas, const int size,const int NumofRow, int& min)
+int Min(int **mas, const int size,const int NumofRow)
 {
-    min = mas[NumofRow][0];
+   int min = mas[NumofRow][0];
         for (int j = 0; j < size; j++)
             if (mas[NumofRow][j] < min)
                 min = mas[NumofRow][j];
+        return min;
+
 }
 void Sum(int** mas, const int size,int &min, int& sum)
 {
     for (int i = 0; i < size; i++)
-    {
         if (i % 2 != 0)
-        {
-            Min(mas, size, i, min);
-            sum += min;
-        }
-    }
-          
+            sum += Min(mas, size, i);
 }
 
 int main()

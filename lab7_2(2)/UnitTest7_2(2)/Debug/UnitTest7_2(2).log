@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  UnitTest7_2(2).cpp
+C:\Users\KlikSen\source\repos\lab7_2(2)\lab7_2(2).cpp(35): warning C4715: Min: значение возвращается не при всех путях выполнения
+     Создается библиотека C:\Users\KlikSen\source\repos\lab7_2(2)\Debug\UnitTest7_2(2).lib и объект C:\Users\KlikSen\source\repos\lab7_2(2)\Debug\UnitTest7_2(2).exp
+  UnitTest7_2(2).vcxproj -> C:\Users\KlikSen\source\repos\lab7_2(2)\Debug\UnitTest7_2(2).dll

@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-void Count(const string s, int& k)
+int Count(const string s)
 {
-	k = 0;
+	int k = 0;
 	size_t pos = 0;
 	while ((pos = s.find(',', pos)) != -1)
 	{
@@ -11,6 +11,7 @@ void Count(const string s, int& k)
 		if (s[pos] == '-')
 			k++;
 	}
+	return k;
 }
 string Change(string& s)
 {
@@ -22,12 +23,11 @@ string Change(string& s)
 }
 int main()
 {
-	int k;
 	string str;
 	cout << "Enter string:" << endl;
 	getline(cin, str);
-	Count(str, k);
-	cout << "String contained " << k << " groups of '+ -'" << endl;
+
+	cout << "String contained " << Count(str) << " groups of '+ -'" << endl;
 	string dest = Change(str);
 	cout << "Modified string : " << dest << endl;
 	return 0;

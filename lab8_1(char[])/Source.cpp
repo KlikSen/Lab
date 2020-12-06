@@ -1,10 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string.h>
 using namespace std;
-void Count(char* s, int& k)
+int Count(char* s)
 {
 	int pos = 0;
-	k = 0;
+	int k = 0;
 	char* t;
 	while (t = strchr(s + pos, ','))
 	{
@@ -12,6 +13,7 @@ void Count(char* s, int& k)
 		if (s[pos] == '-')
 			k++;
 	}
+	return k;
 }
 char* Change(char* s)
 {
@@ -36,12 +38,12 @@ char* Change(char* s)
 }
 int main()
 {
-	int k;
+
 	char str[101];
 	cout << "Enter string:" << endl;
 	cin.getline(str, 100);
-	Count(str, k);
-	cout << "String contained " << k << " groups of ', -'" << endl;
+	
+	cout << "String contained " << Count(str) << " groups of ', -'" << endl;
 	char* dest = new char[151];
 	dest = Change(str);
 	cout << "Modified string : " << dest << endl;

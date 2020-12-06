@@ -1,0 +1,4 @@
+﻿  UnitTest8_1(char).cpp
+C:\Users\KlikSen\source\repos\lab8_1(char[])\UnitTest8_1(char)\UnitTest8_1(char).cpp(16,8): warning C4101: t: неиспользованная локальная переменная
+     Создается библиотека C:\Users\KlikSen\source\repos\lab8_1(char[])\Debug\UnitTest8_1(char).lib и объект C:\Users\KlikSen\source\repos\lab8_1(char[])\Debug\UnitTest8_1(char).exp
+  UnitTest8_1(char).vcxproj -> C:\Users\KlikSen\source\repos\lab8_1(char[])\Debug\UnitTest8_1(char).dll

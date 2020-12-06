@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#pragma warning(disable : 4996)
 
 using namespace std;
 void Count(char* str, int& kilk)
@@ -7,7 +8,7 @@ void Count(char* str, int& kilk)
 	if (strlen(str) < 2)
 		kilk = 0;
 	int k = 0;
-	for (int i = 1; str[i + 1] != 0; i++)
+	for (int i = 0; str[i + 1] != 0; i++)
 		if (str[i] == ',' && str[i + 1] == '-')
 			k++;
 	kilk = k;

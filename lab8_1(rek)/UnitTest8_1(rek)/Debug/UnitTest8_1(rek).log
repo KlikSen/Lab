@@ -1,0 +1,4 @@
+﻿  UnitTest8_1(rek).cpp
+C:\Users\KlikSen\source\repos\lab8_1(rek)\UnitTest8_1(rek)\UnitTest8_1(rek).cpp(17,8): warning C4101: t: неиспользованная локальная переменная
+     Создается библиотека C:\Users\KlikSen\source\repos\lab8_1(rek)\Debug\UnitTest8_1(rek).lib и объект C:\Users\KlikSen\source\repos\lab8_1(rek)\Debug\UnitTest8_1(rek).exp
+  UnitTest8_1(rek).vcxproj -> C:\Users\KlikSen\source\repos\lab8_1(rek)\Debug\UnitTest8_1(rek).dll

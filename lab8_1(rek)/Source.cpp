@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#pragma warning(disable : 4996)
+
 using namespace std;
 void Count(char* str, int i, int& kilk)
 {

@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-	char ch1, ch2;
+	char ch1;
+	char ch2;
 	const int LEN = 80;
 	char s[LEN];
 
@@ -19,8 +20,8 @@ int main()
 	}
 	do {
 		cout << "Enter string (empty - to exit): ";
-		cin.getline(s, LEN - 1); 
-		strcat(s, "\n"); 
+		cin.getline(s, LEN - 1);
+		strcat(s, "\n");
 		fputs(s, f);
 	} while (*s != '\n');
 
@@ -30,11 +31,24 @@ int main()
 
 	while (!feof(f))
 	{
-		ch1 = getc(f);
-		ch2 = getc(f) + 1;
-		if (ch1 == ',' && ch2 =='-')
+		ch1 = fgetc(f);
+		ch2 = fgetc(f);
+		if ((ch1 ==',' && ch2 == '-'))
+		k++;
+	}
+	rewind(f);
+
+	ch1 = fgetc(f);
+
+	while (!feof(f))
+	{
+		ch1 = fgetc(f);
+		ch2 = fgetc(f);
+		if ((ch1 == ',' && ch2 == '-'))
 			k++;
 	}
 	cout << k;
+
+	fclose(f);
 	return 0;
 }

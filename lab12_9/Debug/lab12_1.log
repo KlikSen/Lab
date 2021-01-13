@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\KlikSen\source\repos\lab12_1\Source.cpp(1,1): warning C4335: Обнаружен файл в формате Mac: преобразуйте исходный файл в формат DOS или UNIX
+C:\Users\KlikSen\source\repos\lab12_1\Source.cpp(37): warning C4715: Find: значение возвращается не при всех путях выполнения
+  lab12_1.vcxproj -> C:\Users\KlikSen\source\repos\lab12_1\Debug\lab12_1.exe

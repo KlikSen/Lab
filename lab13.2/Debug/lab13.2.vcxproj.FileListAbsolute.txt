@@ -1,0 +1,2 @@
+C:\Users\KlikSen\source\repos\lab13.2\Debug\lab13.2.exe
+C:\Users\KlikSen\source\repos\lab13.2\Debug\lab13.2.pdb
